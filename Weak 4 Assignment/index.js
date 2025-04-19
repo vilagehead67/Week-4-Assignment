@@ -77,7 +77,7 @@ for (let score of studentScores ) {
 
 
 // Number: 6
-checkPassStatus = (mathScore, englishScore) => {
+const checkPassStatus = (mathScore, englishScore) => {
     if (mathScore >= 50 && englishScore >= 50) {
         return "Yes";   
     }
@@ -122,14 +122,14 @@ console.log(validateInput(false, false))
 // Number: 9
 // Ternary operator is a concise way to write a simple if-else statement in programming. it's called 
 // ternary because it takes three arguments. condition ? valueIfTrue : valueIfFalse
- checkWorkStatus = (hoursWorked) => {
+ const checkWorkStatus = (hoursWorked) => {
    return hoursWorked >= 40 ? "Full-time" : "Part-time"
 }
 const peterWorkedHours = 60
 console.log(checkWorkStatus(peterWorkedHours));
 
 // Number: 10
-getLargerNumber = (number1, number2) => {
+const getLargerNumber = (number1, number2) => {
     return number1 > number2 ? number1 : number2
 }
 
